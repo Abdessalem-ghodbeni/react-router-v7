@@ -9,6 +9,8 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { loadScript } from "./loadScript";
+import { useEffect } from "react";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -21,9 +23,29 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
+   { rel: "stylesheet", href: "/assets/vendor/font-awesome/css/all.min.css" },
+  { rel: "stylesheet", href: "/assets/vendor/bootstrap-icons/bootstrap-icons.css" },
+  { rel: "stylesheet", href: "/assets/vendor/glightbox/css/glightbox.css" },
+  { rel: "stylesheet", href: "/assets/vendor/swiper/swiper-bundle.min.css" },
+  { rel: "stylesheet", href: "/assets/css/style.css" },
+ 
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+   useEffect(() => {
+    const scripts = [
+      "/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "/assets/vendor/purecounterjs/dist/purecounter_vanilla.js",
+      "/assets/vendor/glightbox/js/glightbox.js",
+      "/assets/vendor/swiper/swiper-bundle.min.js",
+      "/assets/js/functions.js",
+    ];
+
+    scripts.forEach(src => {
+      loadScript(src).catch(err => console.error("Script load error:", src, err));
+    });
+  }, []);
+
   return (
     <html lang="en">
       <head>

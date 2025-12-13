@@ -1,3 +1,20 @@
-import { type RouteConfig, index } from "@react-router/dev/routes";
+import {
+  type RouteConfig,
+  index,
+  prefix,
+  route,
+} from "@react-router/dev/routes";
+import Cours from "./routes/Cours";
+import About from "./routes/About";
+import ReactCompiler from "./routes/ReactCompiler";
 
-export default [index("routes/home.tsx")] satisfies RouteConfig;
+export default [
+  index("routes/home.tsx"),
+  route("about", "routes/About.tsx"),
+  ...prefix("UpWeb", [
+    route("decouvrir", "routes/Cours.tsx", [
+      index("routes/Introduction.tsx"),
+      route("react-compiler", "routes/ReactCompiler.tsx"),
+    ]),
+  ]),
+] satisfies RouteConfig;
