@@ -73,13 +73,13 @@ function ReactCompiler() {
   <div className="row mt-5">
     {/* Title */}
     <div className="col-md-5">
-      <h2 className="mb-5">Questions Fréquentes sur React Compiler</h2>
+      <h5 className="mb-5">Questions Fréquentes sur React Compiler</h5>
       <div className="d-flex align-items-center mb-3">
         <div className="bg-success text-white rounded-circle p-2 me-3">
           <i className="fas fa-cogs fa-lg" />
         </div>
         <div>
-          <h5 className="mb-0">Optimisations Intelligentes</h5>
+          <h6 className="mb-0">Optimisations Intelligentes</h6>
           <p className="text-muted small">React Compiler analyse votre code pour appliquer automatiquement les optimisations</p>
         </div>
       </div>
