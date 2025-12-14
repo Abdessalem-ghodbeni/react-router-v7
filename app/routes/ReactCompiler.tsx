@@ -341,6 +341,134 @@ function ReactCompiler() {
   </div>
 </div>
 
+<main className="container py-5">
+  <article className="blog-post">
+    {/* Image d'en-tête */}
+  
+    {/* Titre */}
+    <h4 className=" mt-5">
+      Créer un projet React 19 avec React Compiler et TypeScript
+    </h4>
+      <img src="/assets/images/image.png" className="img-fluid rounded mt-5" alt="React 19 et Node.js 22+" />
+    {/* Prérequis */}
+    <div className="alert alert-warning mt-4">
+      <h4 className="alert-heading">📋 Prérequis</h4>
+      <p className="mb-0">
+        <strong>React 19 nécessite Node.js version 22 ou supérieure.</strong>
+        Assurez-vous de mettre à jour votre environnement avant de continuer.
+      </p>
+    </div>
+    {/* Étapes */}
+    <h2 className="mt-5"> Étapes de création</h2>
+    <ol className="mt-4">
+      <li className="mb-3">
+        <strong>Étape 1 :</strong> Ouvrez votre terminal et exécutez :
+        <pre className="bg-dark text-light p-3 rounded mt-2"><code>npm create vite@latest</code></pre>
+      </li>
+      <li className="mb-3">
+        <strong>Étape 2 :</strong> Choisissez un nom pour votre projet.
+      </li>
+      <li className="mb-3">
+        <strong>Étape 3 :</strong> Sélectionnez le framework <strong>React</strong>.
+      </li>
+      <li className="mb-3">
+        <strong>Étape 4 :</strong> Sélectionnez le variant <strong>TypeScript + React Compiler</strong>.
+      </li>
+      <li className="mb-3">
+        <strong>Étape 5 :</strong> Vous verrez la question :
+        <div className="alert alert-secondary mt-2">
+          <strong>Use rolldown-vite (Experimental)?</strong>
+          <p className="mb-0 mt-2">
+            <strong>Explication :</strong> Rolldown est un bundler expérimental basé sur Rust, conçu pour être plus rapide que l'outil par défaut. 
+            Il est encore en phase de test mais offre des performances améliorées.
+          </p>
+          <p className="mt-2 mb-0">
+            <strong>Recommandation :</strong> Choisissez <strong>Oui (Yes)</strong> pour tester les dernières optimisations, 
+            ou <strong>Non (No)</strong> pour rester sur la configuration stable de Vite.
+          </p>
+        </div>
+      </li>
+      <li className="mb-3">
+        <strong>Étape 6 :</strong> Installez les dépendances :
+        <pre className="bg-dark text-light p-3 rounded mt-2"><code>npm install</code></pre>
+      </li>
+    </ol>
+    {/* Conclusion */}
+    <h2 className="mt-5">🎯 Résultat</h2>
+    <p className="mt-4">
+      Votre projet React 19 avec React Compiler et TypeScript est maintenant configuré. 
+      Vous pouvez lancer le serveur de développement avec :
+    </p>
+    <pre className="bg-dark text-light p-3 rounded"><code>npm run dev</code></pre>
+    <p className="mt-4">
+      Le <strong>React Compiler</strong> optimise automatiquement vos composants, réduisant le besoin de hooks comme <code>useMemo</code> et <code>useCallback</code>. 
+      Combiné à TypeScript, cela assure à la fois des performances élevées et une base de code robuste.
+    </p>
+  </article>
+</main>
+
+{/* Card START - remplace la carte existante par ceci */}
+<div className="card border p-4">
+  <h6 className="mb-3">Configuration et compilation React</h6>
+
+  <div className="row g-3 align-items-start">
+    {/* package.json */}
+    <div className="col-12">
+      <figure className="mb-2">
+        <img
+        src="/assets/images/json.png"
+          className="img-fluid rounded shadow-sm"
+          alt="Screenshot package.json montrant les dépendances et babel-plugin-react-compiler"
+        />
+      </figure>
+      <h6 className="mb-1">package.json</h6>
+      <p className="mb-2 small text-muted">
+        Contient les dépendances (React 19.x) et les scripts. Notez la présence de
+        <strong> babel-plugin-react-compiler</strong> en devDependencies — c’est le plugin qui active la compilation optimisée du JSX.
+      </p>
+      <ul className="small">
+        <li><strong>Scripts :</strong> <code>dev: "vite"</code>, <code>build: "tsc -b && vite build"</code></li>
+        <li><strong>Focus :</strong> optimisation JSX via React Compiler.</li>
+      </ul>
+    </div>
+
+    {/* vite.config.ts */}
+    <div className="col-12">
+      <figure className="mb-2">
+        <img
+          src="/assets/images/config.png"
+          className="img-fluid rounded shadow-sm"
+         
+        />
+      </figure>
+      <h6 className="mb-1">vite.config.ts</h6>
+      <p className="mb-2 small text-muted">
+        Configuration Vite qui active <code>@vitejs/plugin-react</code> et passe <code>['babel-plugin-react-compiler']</code> à Babel.
+        C’est la configuration indispensable (simple et par défaut) pour que Vite utilise le React Compiler au démarrage.
+      </p>
+      <p className="small mb-0"><strong>Usage :</strong> lancer <code>npm run dev</code> pour démarrer le serveur de dev avec le React Compiler activé.</p>
+    </div>
+  </div>
+
+  <hr className="my-3" />
+  <a   className="btn btn-dark-soft mb-0">Vous qui êtes en train de lire, souriez… restez cool</a>
+</div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </>
   )
 }
