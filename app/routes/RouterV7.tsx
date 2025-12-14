@@ -158,10 +158,13 @@ Impact Market :
         </div>
 
         {/* Redéfinition des Best Practices */}
-        <h4 className="mb-4">🔄 Redéfinition des Best Practices</h4>
+       
+      </div>
+    </div> {/* Row END */}
+     <h4 className="mb-4">🔄 Redéfinition des Best Practices</h4>
         <div className="row g-4 g-lg-5">
           {/* Anciennes pratiques */}
-          <div className="col-md-6">
+          <div className="col-12">
             <div className="card card-body bg-danger bg-opacity-10 border-danger border-opacity-25 p-4 h-100">
               <div className="icon-md bg-danger text-white rounded mb-3">
                 <i className="bi bi-x-circle fa-xl" />
@@ -179,7 +182,7 @@ Impact Market :
           </div>
 
           {/* Nouvelles normes */}
-          <div className="col-md-6">
+          <div className="col-12">
             <div className="card card-body bg-success bg-opacity-10 border-success border-opacity-25 p-4 h-100">
               <div className="icon-md bg-success text-white rounded mb-3">
                 <i className="bi bi-check-circle fa-xl" />
@@ -188,7 +191,7 @@ Impact Market :
               <div className="bg-dark p-3 rounded">
                 <pre className="text-white mb-0 small">
 ├── Loaders au niveau route
-├── État loading global
+├── État loading globale
 ├── Error boundaries hiérarchiques
 └── Navigation déclarative
                 </pre>
@@ -207,8 +210,6 @@ Impact Market :
             </p>
           </div>
         </div>
-      </div>
-    </div> {/* Row END */}
   </div>
 </section>
     
