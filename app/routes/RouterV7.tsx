@@ -191,7 +191,7 @@ Impact Market :
               <div className="bg-dark p-3 rounded">
                 <pre className="text-white mb-0 small">
 ├── Loaders au niveau route
-├── État loading globale
+├── État loading global
 ├── Error boundaries hiérarchiques
 └── Navigation déclarative
                 </pre>
@@ -214,7 +214,11 @@ Impact Market :
 </section>
     
     
-    
+    <h4 className=" mt-5">
+      Créer un projet React 19 avec React router v7 et TypeScript
+    </h4>
+      <img src="/assets/images/v7.png" className="img-fluid rounded mt-5" alt="React 19 et Node.js 22+" />
+       <img src="/assets/images/royerV7777.png" className="img-fluid rounded mt-5" alt="React 19 et Node.js 22+" />
     
     
     

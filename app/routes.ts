@@ -16,6 +16,7 @@ export default [
       index("routes/Introduction.tsx"),
       route("react-compiler", "routes/ReactCompiler.tsx"),
       route("react-router-framework", "routes/RouterV7.tsx"),
+      route("architecture-router-framework", "routes/ArchitectureRouterV7.tsx"),
     ]),
   ]),
 ] satisfies RouteConfig;

@@ -53,30 +53,36 @@ Content START */}
     }
   >
     <i className="bi bi-lightbulb fa-fw me-2" />
-     TypeScript + React Compiler
+     TS + React Compiler
+  </NavLink>
+
+
+</li>
+                 <li className="nav-item">
+  <NavLink
+    to="/UpWeb/decouvrir/react-router-framework"
+    className={({ isActive }) =>
+      isActive ? "nav-link active" : ""
+    }
+  >
+    <i className="bi bi-lightbulb fa-fw me-2" />
+     TS +React Router v7
   </NavLink>
 </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="account-notification.html"><i className="bi bi-bell fa-fw me-2" />Notification</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="account-projects.html"><i className="bi bi-briefcase fa-fw me-2" />My projects</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link active" href="account-payment-details.html"><i className="bi bi-wallet fa-fw me-2" />Payment details</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="account-order.html"><i className="bi bi-basket fa-fw me-2" />Order history</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="account-wishlist.html"><i className="bi bi-heart fa-fw me-2" />Wishlist</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="account-delete.html"><i className="bi bi-trash fa-fw me-2" />Delete profile</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link text-danger" href="#"><i className="fas fa-sign-out-alt fa-fw me-2" />Sign Out</a>
-                    </li>
+
+
+<li className="nav-item">
+  <NavLink
+    to="/UpWeb/decouvrir/react-router-framework"
+    className={({ isActive }) =>
+      isActive ? "nav-link active" : ""
+    }
+  >
+    <i className="bi bi-lightbulb fa-fw me-2" />
+     Architecture react-7R  
+  </NavLink>
+</li>
+                    
                   </ul>
                   {/* Sidebar menu item END */}
                 </div>
